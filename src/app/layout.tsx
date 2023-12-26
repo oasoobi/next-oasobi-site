@@ -1,8 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import Image from 'next/image';
+import Link from 'next/link';
+import { Noto_Sans_JP } from 'next/font/google'
 import './globals.css'
+import NextTopLoader from 'nextjs-toploader'
 
-const inter = Inter({ subsets: ['latin'] })
+const NotoSansJP = Noto_Sans_JP({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +18,21 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ja">
+      <body className={NotoSansJP.className}>
+        <NextTopLoader showSpinner={false}/>
+        <header>
+          <h1 className='text-3xl ml-8'><Link href="../">oasobi.me</Link></h1>
+          <div className='flex justify-center'>
+            <ul className='flex'>
+              <li><Link href="/downloads" className='mr-5'>downloads</Link></li>
+              <li><Link href="/series" className='mr-5'>series</Link></li>
+              <li><Link href="/tools" className='mr-5'>tools</Link></li>
+            </ul>
+          </div>
+        </header>
+        {children}
+      </body>
     </html>
   )
 }

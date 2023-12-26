@@ -20,21 +20,23 @@
   }
 }
 
+html {
+  background: var(--bg-color);
+}
+
 body {
   color: var(--text-color);
   background-color: var(--bg-color);
 }
 
 header {
-  /* From https://css.glass */
   width: 100vw;
   height: 50px;
   display: flex;
-  justify-content: space-between; /* 左右に要素を均等に配置するため */
+  justify-content: space-between;
   align-items: center;
   position: fixed;
-  background: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);

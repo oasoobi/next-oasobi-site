@@ -12,9 +12,8 @@ export default function Home() {
           height={200}
           className="rounded-full"
         ></Image>
-        <div className="mt-5">
-          <h1 className="text-3xl inline">Oasobi</h1>
-          <p className="inline text-2xl">/おあそび</p>
+        <div className="mt-5"
+          <p className="inline text-3xl">/おあそび</p>
         </div>
         <div className="mt-10 inline">
           <p>プログラミングとマイクラが好きな人。</p>

@@ -3,7 +3,7 @@ import * as React from "react";
 
 export default function Home() {
   return (
-    <main className="pt-60">
+    <className="pt-60">
       <div className="ml-10">
         <Image
           src="/icon.jpg"
@@ -22,6 +22,6 @@ export default function Home() {
         </div>
       </div>
       <div></div>
-    </main>
+    </>
   );
 }

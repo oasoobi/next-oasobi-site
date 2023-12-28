@@ -3,8 +3,8 @@ import * as React from "react";
 
 export default function Home() {
   return (
-    <className="pt-60">
-      <div className="ml-10">
+    <>
+      <div className="ml-10 pt-60">
         <Image
           src="/icon.jpg"
           alt="icon"

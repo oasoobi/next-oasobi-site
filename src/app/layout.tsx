@@ -24,7 +24,7 @@ export default function RootLayout({
         <header>
           <h1 className='text-3xl ml-8'><Link href="../">oasobi.me</Link></h1>
           <div className='flex justify-center'>
-            <ul className='flex'>
+            <ul className='hidden md:flex'>
               <li><Link href="/downloads" className='mr-5'>downloads</Link></li>
               <li><Link href="/series" className='mr-5'>series</Link></li>
               <li><Link href="/tools" className='mr-5'>tools</Link></li>

@@ -27,6 +27,11 @@ html {
 body {
   color: var(--text-color);
   background-color: var(--bg-color);
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {

@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="pt-60">
-      <div>
+    <>
+      <div className="pt-60">
         <div className="ml-10">
           <Image
             src="/icon.jpg"
@@ -19,18 +19,17 @@ export default function Home() {
             className="rounded-full"
           ></Image>
           <div className="mt-5">
-            <h1 className="text-3xl inline">Oasobi</h1>
-            <p className="inline text-2xl">/おあそび</p>
+            <p className="inline text-2xl">おあそび</p>
           </div>
           <div className="mt-10 inline">
             <p>プログラミングとマイクラが好きな人。</p>
-            {/* <p>Javaとかもやろうと思っている。</p> */}
+            <p>Javaとかもやろうと思っている。</p>
             <p>JavaScript, Python, C#, Go, PHPをやったが初心者レベル。</p>
           </div>
         </div>
         <div>
         </div>
       </div>
-    </main>
+    </>
   );
 }

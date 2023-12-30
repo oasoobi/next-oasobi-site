@@ -8,26 +8,37 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="pt-60">
-      <div className="ml-10">
-        <Image
-          src="/icon.jpg"
-          alt="icon"
-          width={200}
-          height={200}
-          className="rounded-full"
-        ></Image>
-        <div className="mt-5">
-          <h1 className="text-3xl inline">Oasobi</h1>
-          <p className="inline text-2xl">/おあそび</p>
+    <>
+      <div className="pt-[20%] md:pt-[10%] ml-10 mr-10">
+        <div className="md:flex">
+          <Image src="/icon.jpg" alt="icon" width={175} height={175} className="rounded-full md:ml-8"></Image>
+          <div className="mt-[2%] md:ml-[5%]">
+            <p className="inline text-3xl">おあそび</p>
+            <p>プログラミングとマイクラが好きな人。</p>
+            <p>Javaとかもやろうと思っている。</p>
+          </div>
         </div>
-        <div className="mt-10 inline">
-          <p>プログラミングとマイクラが好きな人。</p>
-          <p>Javaとかもやろうと思っている。</p>
-          <p>JavaScript, Python, C#, Go, PHPをやったが初心者レベル。</p>
+        <div className="md:flex mt-10 md:mt-20 select-none" draggable="false">
+          <div className="boarder border-solid border-[#FF0000] border-[1px] w-[100%] md:w-[25vw] h-[20vh] rounded-[20px] mb-10 md:ml-5 md:mr-5 cursor-pointer">
+            <div className="flex ml-8 mt-5">
+              <img src="/youtube.svg" width={30} height={30} alt="yt logo" className="dark:invert mr-2 font-bold"/>
+              <p className="text-2xl">Youtube</p>
+            </div>
+          </div>
+          <div className="border border-solid border-[#1A8CD8] border-[1px] w-[100%] md:w-[25vw] h-[20vh] rounded-[20px] mb-10 md:ml-5 md:mr-5 cursor-pointer">
+            <div className="flex ml-8 mt-5">
+              <img src="/twitter.svg" width={30} height={30} alt="twitter logo" className="dark:invert mr-2 font-bold"/>
+              <p className="text-2xl">Twitter</p>
+            </div>
+          </div>
+          <div className="border border-solid border-[#000000] border-[1px] dark:border-[#FFFFFF] w-[100%] md:w-[25vw] h-[20vh] rounded-[20px] mb-10 md:ml-5 md:mr-5 cursor-pointer">
+            <div className="flex ml-8 mt-5">
+              <img src="/github.svg" width={30} height={30} alt="github logo" className="dark:invert mr-2 font-bold"/>
+              <p className="text-2xl">GitHub</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div></div>
-    </main>
+    </>
   );
 }

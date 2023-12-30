@@ -11,12 +11,14 @@
 :root {
   --bg-color: white;
   --text-color: black;
+  --hdbg-color: rgba(255, 255, 255, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: black;
     --text-color: white;
+    --hdbg-color: rgba(0, 0, 0, 0.05);
   }
 }
 
@@ -41,7 +43,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);

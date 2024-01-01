@@ -18,7 +18,7 @@
   :root {
     --bg-color: black;
     --text-color: white;
-    --hdbg-color: rgba(0, 0, 0, 0.05);
+    --hdbg-color: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -46,5 +46,4 @@ header {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }

@@ -19,7 +19,7 @@ export default function Home() {
             <p>Javaとかもやろうと思っている。</p>
           </div>
         </div>
-        <div className="md:flex mt-10 md:mt-20 select-none" draggable="false">
+        <div className="md:flex mt-20 md:mt-40 select-none" draggable="false">
           <a href="https://youtube.com/@oasoby">
             <div className="border border-solid border-[#FF0000] border-[1px] w-[100%] md:w-[20vw] h-[20vh] rounded-[20px] mb-10 md:ml-5 md:mr-5 cursor-pointer shadow-[0_20px_50px_rgba(255,_0,_0,_0.5)]  transform hover:scale-95 transition-transform duration-300 hover:shadow-none">
               <div className="flex ml-5 mt-5 items-center">
